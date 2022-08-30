@@ -1,0 +1,99 @@
+@media screen and (max-width: 1150px) {
+
+    .common-text{
+        grid-column: 4/10;
+        grid-row: 3;
+        margin: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    
+    .nav-menu{
+        display: block;
+    }
+
+    .nav .list-link{
+        width: 25vw;
+        height: 60vh;
+
+        background: hsla(239, 37%, 24%, .7);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+
+        margin-top: 35px;
+        transform: translateX(170%);
+        transition: 1s all;
+        position: absolute;
+        right: 0;
+    }
+    .nav .menu-toggle{
+        transform: translateX(15%);
+    }
+    .login{
+        display: none;
+    }
+    .nav .list-link .login-link{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /* ------   MAIN COMMON CONTENT   ----- */
+
+    .content{
+        background-size: cover;
+        background-position: center center;
+    }
+    .common-text{
+        grid-column: 3/10;
+        grid-row: 3;
+        margin: 1rem;
+    }
+
+    .hero-text h1{
+        font-size: 60px;
+    }
+    
+    .hero-text h2{
+        font-size: 60px;
+    }
+    
+    .hero-text p{
+        background: hsla(239, 37%, 24%, .6);
+        border-radius: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .nav .list-link{
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 440px) {
+    .nav .list-link{
+        width: 50vw;
+    }
+    .hero-text h1{
+        font-size: 40px;
+    }
+    
+    .hero-text h2{
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        height: 140vh;
+    }
+}
