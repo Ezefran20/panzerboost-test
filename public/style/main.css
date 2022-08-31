@@ -19,9 +19,27 @@ body{
     font-family: 'Quicksand';
     width: 100%;
     height: 100%;     
-
 }
+html,
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: var(--space-cadet);
+}
+body::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: var(--bittersweet);
+    border-radius: .5rem;
+}
+
         /* NAVBAR */
+
+
+
 
 .header{
     width: 100%;
@@ -39,6 +57,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 0 1.5rem 0 1.5rem;
+    
 }
 
 
@@ -73,8 +92,9 @@ body{
     display: none;
 }
 
-
 .list-link{
+    
+    
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -104,20 +124,21 @@ body{
 }
 
 .btn{
-    width: 100px;
-    height: 35px;
+    width: 110px;
+    height: 40px;
     border-radius: .3rem;
     background-color: transparent;
     border: 1px solid var(--dark-orchid);
     color: #eee;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     transition: .5s all;
+
 }
 
 .btn:hover{
-    border: 1px solid var(--bittersweet);
-    cursor: pointer;
+        border: 1px solid var(--bittersweet);
+        cursor: pointer;
 }
 
 
@@ -150,7 +171,7 @@ body{
      */
     top: 0;
 
-    z-index: -1;
+    z-index: 1;
 }
 .content{
     display: grid;
@@ -228,6 +249,7 @@ body{
     height: 85px;
     display: grid;
     align-items: center;
+
 }
 
 .list-info{
@@ -237,9 +259,20 @@ body{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-  
+    grid-template-columns: repeat(4, auto-fill);
 }
-
+.orders{
+    grid-column: 1;
+}
+.ratio{
+    grid-column: 2;
+}
+.boosters{
+    grid-column: 3;
+}
+.reviews{
+    grid-column: 4;
+}
 
 .nav-stats h1{
     color: var(--bittersweet);
@@ -256,6 +289,75 @@ body{
 
 /* --------- INFO COMMON ---------- */
 
+/* .image img{
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+    position: absolute;
+
+    
+
+
+    background-size: auto;
+    transform: scaleX(-1);
+    z-index: -999;
+} */
+
+
 .info-common{
-    background-image: url(/public/img/wallpapersden.com_77207-3840x2160.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -1rem;
+}
+
+.info-text{
+   grid-column: 2;
+   display: grid;
+   gap: 30px;
+   margin: 5rem;
+}
+
+.hero-info h1{
+    font-size: 35px;
+    color: var(--space-cadet);
+}
+
+.hero-info span{
+    font-size: 20px;
+}
+
+.hero-info p{
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--space-cadet);
+}
+
+.hero-stats{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.stats p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--space-cadet);
+}
+.stats i{
+    font-size: 1.5rem;
+    color: var(--bittersweet);
+}
+
+
+.emote img{
+    width: 650px;
+    height: 100%;
 }
