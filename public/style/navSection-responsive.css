@@ -81,6 +81,10 @@
     .nav .list-link{
         width: 30vw;
     }
+    
+.content .btn{
+    margin-top: 2rem;
+
 }
 @media screen and (max-width: 440px) {
     .nav .list-link{
