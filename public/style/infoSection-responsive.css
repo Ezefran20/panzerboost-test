@@ -57,6 +57,26 @@
 @media screen and (max-width: 400px) {
     .info-header{
         width: 100%;
-        height: 23vh;
+        height: 40vh;
+    }
+    
+.hero-info h1{
+    font-size: 28px;
+}
+
+.hero-info span{
+    font-size: 20px;
+}
+
+.hero-info p{
+    font-size: 17px;
+}
+
+}
+
+@media screen and (max-width: 315px) {
+    .info-header{
+        width: 100%;
+        height: 26vh;
     }
 }

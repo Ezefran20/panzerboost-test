@@ -160,7 +160,7 @@ body::-webkit-scrollbar-thumb{
 /* MAIN COMMON CONTENT */
 
 .content{
-    height: 110vh;
+    min-height: auto;
     background-image: url(/public/img/wallpaperflare.com_wallpaper.jpg);
     background-size: auto;
     background-position: left top;
@@ -169,8 +169,7 @@ body::-webkit-scrollbar-thumb{
     position: relative; 
 
 
-    /* ABSOLUTE ES LO QUE NO ME DEJA MOSTRAR EL INFO BIEN DEVBAJO
-     */
+    /* ABSOLUTE ES LO QUE NO ME DEJA MOSTRAR EL INFO BIEN DEBAJO*/
     top: 0;
 
     z-index: 1;
@@ -359,8 +358,21 @@ body::-webkit-scrollbar-thumb{
     color: var(--bittersweet);
 }
 
-
 .emote img{
     width: 650px;
     height: 100%;
+}
+
+
+.steps-info{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box{
+    width: 350px;
+    height: 60vh;
+    background: rgb(207, 108, 108);
 }
