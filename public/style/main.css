@@ -328,6 +328,7 @@ body::-webkit-scrollbar-thumb{
 
 .hero-info span{
     font-size: 20px;
+    color: var(--bittersweet);
 }
 
 .hero-info p{
