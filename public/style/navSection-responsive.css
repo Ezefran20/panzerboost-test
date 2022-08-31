@@ -41,6 +41,7 @@
     }
     .btn{
         height: 50px;
+        border: 1px solid hsla(7, 95%, 67%, 1);;
     }
     .nav .list-link .login-link{
         display: flex;

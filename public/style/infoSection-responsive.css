@@ -49,7 +49,9 @@
     .stats{
         align-self: center;
         gap: 10px;
+        flex-direction: column;
     }
+    
 }
 
 @media screen and (max-width: 400px) {
