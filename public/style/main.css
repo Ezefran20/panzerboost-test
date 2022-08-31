@@ -364,9 +364,11 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+/* ------------------- */
+
 .steps-info{
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fit, 350px);
     align-items: center;
     justify-content: space-between;
 }
