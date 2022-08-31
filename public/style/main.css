@@ -161,7 +161,7 @@ body::-webkit-scrollbar-thumb{
 
 .content{
     min-height: auto;
-    background-image: url(/public/img/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(/public/img/NavWallpaperKassadin.jpg);
     background-size: auto;
     background-position: left top;
     background-repeat: no-repeat;
@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb{
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(/public/img/recorte.jpg);
+    background-image: url(/public/img/ZedInfo.jpg );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
