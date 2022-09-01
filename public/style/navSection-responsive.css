@@ -18,13 +18,13 @@
 
     .nav .list-link{
         width: 25vw;
-        height: 70vh;
+        height: calc(100% + 300px);
 
         background: hsla(239, 37%, 24%, .705);
         
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+
         align-items: center;
         text-align: center;
 
@@ -84,7 +84,6 @@
 
 
 
-
 @media screen and (max-width: 700px) {
     .nav .list-link{
         width: 30vw;
@@ -113,8 +112,9 @@
 
 @media screen and (max-width: 440px) {
     .nav .list-link{
-        width: 50vw;
+        width: 45vw;
     }
+
     .hero-text h1{
         font-size: 40px;
     }
@@ -140,7 +140,7 @@
     }
     
     .nav .list-link{
-        width: 60vw;
+        width: 65vw;
     }
 }
 
@@ -156,17 +156,10 @@
         font-weight: 700;
     }
     
-    .nav .list-link{
-        height: 70vh;
-    }
-    
+
 }
 
 @media screen and (max-width: 320px) {
-    .nav .list-link{
-        height: 100vh;
-    }    
-    
     .content{
         height: 150vh;
     }
@@ -177,7 +170,7 @@
 
 @media screen and (max-width: 280px) {
     .nav .list-link{
-        height: 100vh;
+        width: 25vh;
     }    
     
     .content{
