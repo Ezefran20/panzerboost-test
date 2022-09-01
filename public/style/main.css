@@ -213,7 +213,6 @@ body::-webkit-scrollbar-thumb{
     font-weight: 500;
     color: #eee;
     text-align: center;
-    width: 100%;
     line-height: 30px;
 }
 

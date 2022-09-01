@@ -69,9 +69,10 @@
         font-size: 60px;
     }
     
-    .hero-text p{
+    .hero-text .p {
         background: hsla(239, 37%, 24%, .7);
         border-radius: .5rem;
+        width: calc(100% + 25px);
     }
 
 }
@@ -105,7 +106,6 @@
 }
 
 
-
 @media screen and (max-width: 440px) {
     .nav .list-link{
         width: 50vw;
@@ -118,13 +118,18 @@
         font-size: 40px;
     }
     .content{
-        height: 100%;
+        height: 130vh;
     }
 }
 
+@media screen and (max-width: 380px) {
+    .content{
+        height: 140vh;
+    }
+    
+}
 
-
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
     .content{
         height: 160vh;
     }
@@ -158,9 +163,19 @@
     }    
     
     .content{
-        height: 225vh;
+        height: 180vh;
     }
     
 }
 
+}
+
+@media screen and (max-width: 280px) {
+    .nav .list-link{
+        height: 100vh;
+    }    
+    
+    .content{
+        height: 210vh;
+    }
 }
