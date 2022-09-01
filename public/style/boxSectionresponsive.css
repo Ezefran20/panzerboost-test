@@ -1,0 +1,9 @@
+@media screen and (max-width: 1150px) {
+    .steps-info{
+        grid-template-columns: repeat(auto-fit, 100%);
+        gap: 0;
+    }
+    .box{
+        width: auto;
+    }
+}

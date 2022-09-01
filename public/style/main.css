@@ -373,19 +373,82 @@ body::-webkit-scrollbar-thumb{
 
 .steps-info{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    grid-template-columns: repeat(auto-fit, 300px /* minmax(200px, 350px)*/ );
     align-items: center;
-    justify-content: space-around;
-    gap: 10px;
+    gap: 50px;
 }
 
 .box{
-    width: 350px;
-    height: 60vh;
-    background: rgb(207, 108, 108);
+    width: 25vw;
+    height: 500px;
+    background: hsla(239, 37%, 24%, 1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all .5s;
 }
 
-/* .active{
-    width: 400px;
-} */
+.box:hover{
+    cursor: pointer;
+}
 
+.box h1{
+    font-size: 28px;
+    margin: 1rem;
+    color: var(--bittersweet);
+}
+.box h1 > p{
+    font-size: 17px;
+    margin: 1rem;
+    color: #eee;
+    line-height: 25px;
+}
+
+.service,
+.method,
+.order,
+.work{
+    z-index: 9;
+    position: relative;
+}
+
+.service::before,
+.method::before,
+.order::before,
+.work::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: center center;
+    background-size: cover;
+    opacity: .1;
+    z-index: -9;
+    transition: all .5s;
+}
+.work::before{
+    background-image: url(/public/img/luzzz.jpg);
+}
+
+.service::before{
+    background-image: url(/public/img/Blitz.jpg);
+}
+
+.method::before{
+    background-image: url(/public/img/kindred.jpg);
+}
+
+.order::before{
+    background-image: url(/public/img/TeemoSun.png);
+}
+
+/* HOVER */
+
+.order:hover::before,
+.service:hover::before,
+.method:hover::before,
+.work:hover::before{
+    opacity: .8;   
+}
