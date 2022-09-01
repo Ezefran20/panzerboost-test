@@ -485,7 +485,8 @@ body::-webkit-scrollbar-thumb{
     color: var(--bittersweet);
     font-size: 40px;
     font-weight: 700;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    margin: 1rem;
 }
 .hero-demo p{
     align-self: center;
@@ -493,6 +494,7 @@ body::-webkit-scrollbar-thumb{
     color: #eee;
     font-weight: 500;
     margin-top: .5rem;
+    margin: 1rem;
 }
 .demo-img img{
     width: 100%;
@@ -513,6 +515,7 @@ body::-webkit-scrollbar-thumb{
     text-transform: uppercase;
     transition: .5s all;
     border: 2px solid var(--dark-orchid);
+
 }
 .demo-content .btn:hover{
     cursor: pointer;
