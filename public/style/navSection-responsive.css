@@ -18,7 +18,7 @@
         width: 25vw;
         height: 70vh;
 
-        background: hsla(239, 37%, 24%, 1);
+        background: hsla(239, 37%, 24%, .705);
         
         display: flex;
         flex-direction: column;
@@ -98,9 +98,6 @@
     .nav .list-link{
         width: 35vw;
     }
-    .nav .list-link{
-        width: 60vw;
-    }
     .common-text{
         grid-column: 4/10;
         grid-row: 2;
@@ -130,6 +127,10 @@
 @media screen and (max-width: 370px) {
     .content{
         height: 160vh;
+    }
+    
+    .nav .list-link{
+        width: 60vw;
     }
 }
 

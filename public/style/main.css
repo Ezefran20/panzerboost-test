@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb{
 .header{
     width: 100%;
     height: auto;
-    background: hsla(239, 37%, 24%, .7);
+    background: hsla(239, 37%, 24%, .705);
     position: absolute;
     z-index: 2;
 }
@@ -162,7 +162,7 @@ body::-webkit-scrollbar-thumb{
 .content{
     min-height: auto;
     background-image: url(/public/img/NavWallpaperKassadin.jpg);
-    background-size: auto;
+    background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
     max-width: 100%;
