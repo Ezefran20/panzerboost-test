@@ -40,7 +40,6 @@ body::-webkit-scrollbar-thumb{
 
 
 
-
 .header{
     width: 100%;
     height: auto;
@@ -452,3 +451,73 @@ body::-webkit-scrollbar-thumb{
 .work:hover::before{
     opacity: .8;   
 }
+
+
+/* ----- DEMO SECTION ----- */
+
+.demo-content{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background:  hsla(239, 37%, 24%, .5);
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.demo-content::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background: url(/public/img/leaguebg.jpg);
+    z-index: -1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-demo h1{
+    color: var(--bittersweet);
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+.hero-demo p{
+    align-self: center;
+    font-size: 20px;
+    color: #eee;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+.demo-img img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.demo-content .btn{
+    width: 180px;
+    height: 70px;
+    color: #eee;
+    font-size: 18px;
+    border-radius: 0.5rem;
+    align-self: center;
+    margin-top: 2.5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: .5s all;
+    border: 2px solid var(--dark-orchid);
+}
+.demo-content .btn:hover{
+    cursor: pointer;
+    border: 2px solid var(--bittersweet);
+    color: var(--bittersweet);
+    background-color: var(--space-cadet);
+}
+
