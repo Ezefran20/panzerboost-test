@@ -17,9 +17,12 @@
     .hero-demo p{
         font-size: 17px;
     }
+}
+
+@media screen and (max-width: 450px) {
     .demo-img{
         grid-column: 6;
-        grid-row: 11;
+        grid-row: 12;
     }
 }
 
