@@ -89,10 +89,10 @@
         width: 30vw;
     }
     
-.content .btn{
-    margin-top: 2rem;
+    .content .btn{
+        margin-top: 2rem;
 
-}
+    }
 
 
 
@@ -104,7 +104,7 @@
         width: 35vw;
     }
     .common-text{
-        grid-column: 4/10;
+        grid-column: 3/10;
         grid-row: 2;
     }
 }
