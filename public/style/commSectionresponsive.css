@@ -1,0 +1,18 @@
+@media screen and (max-width: 950px) {
+    .boxs-comm{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .boxc-text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .boxs-comm{
+        text-align: center;
+    }
+}

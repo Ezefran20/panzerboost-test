@@ -1,8 +1,41 @@
+@media screen and (max-width: 800px) {
+    .demo-img{
+        grid-column: 6;
+        grid-row: 10;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .demo-img{
+        grid-column: 6;
+        grid-row: 11;
+    }
+}
+
 @media screen and (max-width: 400px) {
+    .hero-demo{
+        grid-column: 1/12;
+    }
     .hero-demo h1{ 
         font-size: 30px;
+
     }
     .hero-demo p{
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .demo-img .logo h1{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .demo-img .logo p{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .demo-img .logo img{
+        min-width: 90px;
+        max-width: 120px;
     }
 }
