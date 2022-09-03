@@ -745,7 +745,7 @@ body::-webkit-scrollbar-thumb{
 .subf-text h1{
     font-size: 35px;
     font-weight: 700;
-    color: #eee;
+    color: var(--bittersweet);
 }
 .subf-text p{
     font-size: 22px;
