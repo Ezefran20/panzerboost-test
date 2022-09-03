@@ -107,7 +107,6 @@
     .common-text{
         grid-column: 3/10;
         grid-row: 2;
-
     }
 }
 
@@ -118,11 +117,11 @@
     }
 
     .hero-text h1{
-        font-size: 45px;
+        font-size: 40px;
     }
     
     .hero-text h2{
-        font-size: 45px;
+        font-size: 40px;
     }
     .content{
         height: 105vh;

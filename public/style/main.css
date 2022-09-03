@@ -722,7 +722,7 @@ body::-webkit-scrollbar-thumb{
     background: url(/public/img/light_vs_darkness_by_leajas_dcek95v-pre.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center  ;
+    background-position: right 40% center  ;
     background-attachment: fixed;
     width: 100%;
     opacity: 1; 
@@ -773,25 +773,89 @@ body::-webkit-scrollbar-thumb{
 .footer{
     background-color: var(--space-cadet);
     width: 100%;
-    min-height: 200px;
-    max-height: 400px;
-
-    display: flex;
+    min-height: 300px;
+    display: grid;
     justify-content: center;
-    align-items: flex-end;
-
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 42.8px);
 }
 
+.logo{
+    grid-column: 4/5;
+    grid-row: 3;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.logo h1{
+    font-size: 25px;
+}
+
+.logo p{
+    font-size: 16px;
+}
+
+
+.text{
+    margin-top: -1.5rem;
+    width: 300px;
+    text-align: center;
+    align-self: center;
+    color: #eee;
+    grid-column: 4/5;
+    grid-row: 6;
+}
+
+.contact{
+    grid-column: 4/5;
+    grid-row: 7;
+    margin-top: 1rem;  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #eee;
+    font-size:  30px;
+    color: var(--bittersweet); 
+    transition: all .5s;
+}
+
+.contact a:hover{
+    transform: scale(1.2);
+}
 
 
 .copyright{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+
+    grid-column: 1/8;
+    margin: 1rem;
+    grid-row: 8;
+}
+
+.copyright p{
     color: #eee;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 18px;
 }
 
 .copyright span{
     color: var(--bittersweet);
+    cursor: pointer;
+}
+
+.copyright br{
+    display: none;
 }

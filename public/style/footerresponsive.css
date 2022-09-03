@@ -1,0 +1,41 @@
+@media screen and (max-width: 650px) {
+    .footer{
+        min-height: 420px;
+    }
+    .copyright{
+        flex-direction: column;
+        margin-top: 13vh;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer{
+        min-height: 460px;
+    }
+    .copyright{
+        flex-direction: column;
+        margin-top: 20vh;
+        text-align: center;
+        gap: 10px;
+    }
+    .copyright br{
+        display: block;
+    }
+    .text{
+        width: calc(200px + 15vw);
+        margin: 1rem;
+    }
+
+    .contact{
+        margin-top: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .contact{
+        justify-content: center;
+        gap: 20px;
+    }
+}
