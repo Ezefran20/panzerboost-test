@@ -722,7 +722,7 @@ body::-webkit-scrollbar-thumb{
     background: url(/public/img/light_vs_darkness_by_leajas_dcek95v-pre.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center  ;
     background-attachment: fixed;
     width: 100%;
     opacity: 1; 

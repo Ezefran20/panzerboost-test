@@ -53,6 +53,26 @@
     .subf-text p{
         font-size: 18px;
     }
+
+}
+
+@media screen and (max-width: 550px){
+    .sub-footer::before{
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        background: url(/public/img/light_vs_darkness_by_leajas_dcek95v-pre.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right 50% center 50%;
+        background-attachment: fixed;
+        width: 100%;
+        opacity: 1; 
+        z-index: -99;
+    }
+    
 }
 
 
