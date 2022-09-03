@@ -22,9 +22,9 @@
     .copyright br{
         display: block;
     }
-    .text{
+    .footer .text{
         width: calc(200px + 15vw);
-        margin: 1rem;
+        margin-top: 10vh;
     }
 
     .contact{
@@ -33,9 +33,15 @@
 
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
     .contact{
         justify-content: center;
         gap: 20px;
+    }
+        .footer .text{
+        margin-top: 1vh;
+    }
+    .copyright{
+        margin-top:30vh;
     }
 }
