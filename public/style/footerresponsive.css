@@ -33,15 +33,24 @@
 
 }
 
+@media screen and (max-width: 390px) {
+    .contact{
+        margin-top: 4rem;
+    }
+    .footer .text{
+        margin-top: 1vh;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .contact{
         justify-content: center;
         gap: 20px;
     }
-        .footer .text{
+    .footer .text{
         margin-top: 1vh;
     }
     .copyright{
-        margin-top:30vh;
+        margin-top: 30vh;
     }
 }
